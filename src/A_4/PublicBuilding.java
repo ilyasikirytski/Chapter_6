@@ -1,4 +1,4 @@
 package A_4;
 
-abstract class PublicBuilding implements Building{
+abstract class PublicBuilding implements Building {
 }
