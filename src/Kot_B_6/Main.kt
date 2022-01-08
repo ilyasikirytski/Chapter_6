@@ -1,6 +1,6 @@
 package Kot_B_6
 
-fun main(){
+fun main() {
     val aircraftCarrier = KotAircraftCarrier()
     aircraftCarrier.swim()
     val dryCargoShip = KotDryCargoShip()
