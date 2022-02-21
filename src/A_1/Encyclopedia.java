@@ -6,5 +6,4 @@ public class Encyclopedia extends AbstractBook {
     public void print() {
         System.out.println("Энциклопедия: издание " + getNumberOfEdition() + "; размером " + getCountOfLists() + " листов - издано!");
     }
-
 }
