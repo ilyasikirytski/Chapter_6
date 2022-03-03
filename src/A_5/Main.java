@@ -4,7 +4,7 @@
  */
 package A_5;
 
-import A_5.siemensMobile.Model;
+import A_5.siemens.Model;
 
 public class Main {
     public static void main(String[] args) {
