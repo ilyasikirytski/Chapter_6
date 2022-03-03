@@ -6,9 +6,9 @@ package A_6;
 
 public class Main {
     public static void main(String[] args) {
-        AircraftCarrier aircraftCarrier = new AircraftCarrier();
+        AircraftCarrier aircraftCarrier = new AircraftCarrier(50);
         aircraftCarrier.swim();
-        DryCargoShip dryCargoShip = new DryCargoShip();
+        DryCargoShip dryCargoShip = new DryCargoShip(20);
         dryCargoShip.swim();
     }
 }
