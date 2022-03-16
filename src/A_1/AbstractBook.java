@@ -8,10 +8,6 @@ abstract class AbstractBook implements Edition {
     private int numberOfEdition = 0;
     private int countOfLists = 100;
 
-    public int getNumberOfEdition() {
-        return numberOfEdition;
-    }
-
     public int getCountOfLists() {
         return countOfLists;
     }
@@ -25,12 +21,17 @@ abstract class AbstractBook implements Edition {
     }
 
     @Override
-    public void setNumberOfEdition(int numberOfEdition) {
-        this.numberOfEdition = numberOfEdition;
+    public String getTypeOfEdition() {
+        return typeOfBook;
     }
 
     @Override
-    public void print() {
-        System.out.println(typeOfBook + " - издание " + getNumberOfEdition() + " размером " + getCountOfLists() + " листов - издано!");
+    public int getNumberOfEdition() {
+        return numberOfEdition;
+    }
+
+    @Override
+    public void setNumberOfEdition(int numberOfEdition) {
+        this.numberOfEdition = numberOfEdition;
     }
 }

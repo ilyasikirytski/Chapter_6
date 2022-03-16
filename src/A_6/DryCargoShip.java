@@ -2,7 +2,7 @@ package A_6;
 
 public class DryCargoShip extends AbstractShip {
     public DryCargoShip(int maxSpeed) {
-        super.setMaxSpeed(maxSpeed);
+        super(maxSpeed);
     }
 
     @Override

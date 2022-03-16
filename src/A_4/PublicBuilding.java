@@ -1,12 +1,15 @@
 package A_4;
 
-// TOD не придумал что можно использовать из методов/полей? получается абсолютно бесполезная и пустая абстракция
 abstract class PublicBuilding implements Building {
     private String typeOfBuilding;
     private int countOfFlore;
     private int square;
 
     public PublicBuilding() {
+    }
+
+    public String getTypeOfBuilding() {
+        return typeOfBuilding;
     }
 
     public void setTypeOfBuilding(String typeOfBuilding) {
@@ -21,10 +24,6 @@ abstract class PublicBuilding implements Building {
     @Override
     public void setSquare(int square) {
         this.square = square;
-    }
-
-    public String getTypeOfBuilding() {
-        return typeOfBuilding;
     }
 
     @Override

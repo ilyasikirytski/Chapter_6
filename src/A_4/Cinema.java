@@ -4,8 +4,4 @@ class Cinema extends PublicBuilding {
     public Cinema() {
         super.setTypeOfBuilding("Кинотеатр");
     }
-
-    public String getTypeOfBuilding() {
-        return super.getTypeOfBuilding();
-    }
 }

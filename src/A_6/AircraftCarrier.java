@@ -2,7 +2,7 @@ package A_6;
 
 public class AircraftCarrier extends AbstractShip {
     public AircraftCarrier(int maxSpeed) {
-        super.setMaxSpeed(maxSpeed);
+        super(maxSpeed);
     }
 
     @Override
