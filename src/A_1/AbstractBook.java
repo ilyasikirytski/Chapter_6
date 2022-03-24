@@ -1,12 +1,13 @@
 package A_1;
 
-// TOD?? а вот поля как номер издания как раз бы подошло для того чтобы положить его в издании.
-//  а получается книга мало того что сама себя печатает, так еще и номер издания сама себе подбирает? типо у нее
-//  есть выход в интернет и она туда ходит чтобы номер издания получить?)
 abstract class AbstractBook implements Edition {
     private String typeOfBook;
     private int numberOfEdition = 0;
     private int countOfLists = 100;
+
+    public AbstractBook(String typeOfBook) {
+        this.typeOfBook = typeOfBook;
+    }
 
     public int getCountOfLists() {
         return countOfLists;
