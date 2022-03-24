@@ -1,12 +1,20 @@
 package A_3;
 
-// TOD? как я понял из задания interface Сотрудник <- class Инженер <- class Руководитель.
-//  то руководитель тоже должен быть инженером, а у тебя он просто работник
+import java.util.ArrayList;
+import java.util.Arrays;
+
 public class Director extends Engineer {
-    private final Engineer engineer = new Engineer();
+    private final ArrayList<Engineer> engineers = new ArrayList<>();
+
+    public void addEngineer(Engineer... engineer) {
+        engineers.addAll(Arrays.asList(engineer));
+    }
+
     @Override
     public void work() {
-        System.out.println("Директор заставил инженера работать");
-        engineer.work();
+        for (Engineer engineer : engineers) {
+            System.out.printf("Директор заставил работать: %s\n", engineer.getName());
+            engineer.work();
+        }
     }
 }
