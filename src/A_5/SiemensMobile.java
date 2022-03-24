@@ -7,6 +7,7 @@ public class SiemensMobile extends Model implements Mobile {
         super(modelName);
     }
 
+    @Override
     public String getBrand() {
         return brand;
     }

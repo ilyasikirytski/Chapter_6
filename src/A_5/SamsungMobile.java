@@ -7,6 +7,7 @@ public class SamsungMobile extends Model implements Mobile {
         super(modelName);
     }
 
+    @Override
     public String getBrand() {
         return brand;
     }

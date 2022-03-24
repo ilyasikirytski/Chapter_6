@@ -1,6 +1,6 @@
 package A_5;
 
-abstract class Model implements Mobile{
+abstract class Model implements Mobile {
     private String modelName;
 
     public Model(String modelName) {
